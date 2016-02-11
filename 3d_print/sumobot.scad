@@ -36,14 +36,14 @@
   kerf = 0.05;
 
   // How thick is the material? This also is the tab height.
-  material_thickness = 4.75;
+  material_thickness = 3.175;
 
   // How high is the battery case?
   battery_case_height = 16;
 
   // How large is our servo hole?
-  servo_height = 21.5;
-  servo_length = 42.5;
+  servo_height = 20.7;
+  servo_length = 41.7;
 
   // How long is the sumo bot?
   sled_length = 80.5;
@@ -77,7 +77,7 @@
   screw_diameter = 2.25;
 
   // How far apart are our ball caster holes?
-  caster_screw_spacing = 25;
+  caster_screw_spacing = 13.462;
 
   // How far back from the front do we place the caster?
   caster_position = 12;
@@ -132,6 +132,8 @@ module screw_hole() {
 // Male side of the tab
 module tab() {
 	square([tab_length, material_thickness]);
+    polygon(points=[[tab_length,material_thickness],[tab_length + .5, material_thickness],[tab_length,material_thickness + 1],[0,material_thickness + 1],[-.5,material_thickness]]);
+    polygon(points=[[tab_length,0],[tab_length + .5,0],[tab_length,-1],[0,-1],[-.5,0]]);
 }
 
 // Female side of the tab
@@ -471,9 +473,9 @@ module laser_sheet(spacing=2) {
 	translate([0,-wheel_radius/2]) {
 		translate([-wheel_radius,sled_width+wheel_radius+material_thickness])
 			wheel(built_in_hub=0);
-		translate([-sled_length - ramp_length, 0])
+		translate([-sled_length - ramp_length, -spacing])
 			top();
-		translate([-sled_length - ramp_length, -sled_width - material_thickness * 2 - spacing ])
+		translate([-sled_length - ramp_length, -sled_width - material_thickness * 2 - spacing * 4 ])
 			bottom(built_in_caster=0);
 	}
 
