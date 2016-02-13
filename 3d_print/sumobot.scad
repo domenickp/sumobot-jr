@@ -36,14 +36,19 @@
   kerf = 0.05;
 
   // How thick is the material? This also is the tab height.
-  material_thickness = 3.175;
+  // 1/8 inch = 3.175mm
+  //material_thickness = 3.175;
+  material_thickness = 5;
 
   // How high is the battery case?
   battery_case_height = 16;
 
   // How large is our servo hole?
-  servo_height = 20.7;
-  servo_length = 41.7;
+  // Actual servo dimentions
+  //servo_height = 20.7;
+  //servo_length = 41.7;
+  servo_height = 21.2;
+  servo_length = 42.2;
 
   // How long is the sumo bot?
   sled_length = 80.5;
