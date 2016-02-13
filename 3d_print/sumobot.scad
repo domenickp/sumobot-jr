@@ -33,7 +33,7 @@
   // Kerf is the amount of space removed by a cutting tool. I use it
   // here to describe how much space to leave between tabs and space.
   // For laser cutters, I use 0.05, for 3D printers I use 0.375
-  kerf = 0.05;
+  kerf = 0.03;
 
   // How thick is the material? This also is the tab height.
   // 1/8 inch = 3.175mm
@@ -47,8 +47,8 @@
   // Actual servo dimentions
   //servo_height = 20.7;
   //servo_length = 41.7;
-  servo_height = 21.2;
-  servo_length = 42.2;
+  servo_height = 20.8;
+  servo_length = 41.9;
 
   // How long is the sumo bot?
   sled_length = 80.5;
