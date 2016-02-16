@@ -48,7 +48,7 @@
   //servo_height = 20.7;
   //servo_length = 41.7;
   servo_height = 20.8;
-  servo_length = 41.9;
+  servo_length = 41.8;
 
   // How long is the sumo bot?
   sled_length = 80.5;
