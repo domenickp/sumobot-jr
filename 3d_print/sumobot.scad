@@ -494,21 +494,26 @@ if ( build_laser_sheet ) {
 }
 
 if ( build_wheel ) {
-  wheel();
+  projection(cut=true)
+    wheel();
 }
 
 if ( build_top ) {
-  top();
+  projection(cut=true)
+    top();
 }
 
 if ( build_shovel ) {
-  shovel();
+  projection(cut=true)
+    shovel();
 }
 
 if ( build_bottom ) {
-  bottom();
+  projection(cut=true)
+    bottom();
 }
 
 if ( build_side ) {
-  side();
+  projection(cut=true)
+    side();
 }
