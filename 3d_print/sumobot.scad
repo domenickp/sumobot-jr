@@ -33,7 +33,7 @@
   // Kerf is the amount of space removed by a cutting tool. I use it
   // here to describe how much space to leave between tabs and space.
   // For laser cutters, I use 0.05, for 3D printers I use 0.375
-  kerf = 0.03;
+  kerf = 0.05;
 
   // How thick is the material? This also is the tab height.
   // 1/8 inch = 3.175mm
